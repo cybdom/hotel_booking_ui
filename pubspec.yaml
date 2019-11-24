@@ -60,7 +60,7 @@ flutter:
     - family: OpenSans
       fonts:
         - asset: fonts/OpenSans-Regular.ttf
-        - asset: fonts/OpenSans-light.ttf
+        - asset: fonts/OpenSans-Light.ttf
           weight: 100
         - asset: fonts/OpenSans-Bold.ttf
           weight: 700
