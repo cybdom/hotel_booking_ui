@@ -6,7 +6,8 @@ import 'package:hotel_booking/global.dart';
 class DetailsScreen extends StatelessWidget {
   final int id;
 
-  const DetailsScreen({Key key, this.id}) : super(key: key);
+  const DetailsScreen({super.key, required this.id});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,7 +71,10 @@ class DetailsScreen extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             "${destinationsList[id].hotelName}",
-                            style: Theme.of(context).textTheme.display1.apply(
+                            style: Theme.of(context)
+                                .textTheme
+                                .headlineMedium
+                                ?.apply(
                                   color: Colors.white,
                                 ),
                           ),
@@ -78,8 +82,8 @@ class DetailsScreen extends StatelessWidget {
                             "${destinationsList[id].placeName} - ${destinationsList[id].date}",
                             style: Theme.of(context)
                                 .textTheme
-                                .subtitle
-                                .apply(color: Colors.white70),
+                                .titleSmall
+                                ?.apply(color: Colors.white70),
                           ),
                           Spacer(),
                           Row(
@@ -92,15 +96,15 @@ class DetailsScreen extends StatelessWidget {
                                     "351€",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .display1
-                                        .apply(color: Colors.white),
+                                        .headlineMedium
+                                        ?.apply(color: Colors.white),
                                   ),
                                   Text(
                                     "4 nights",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .body2
-                                        .apply(color: Colors.white70),
+                                        .bodyLarge
+                                        ?.apply(color: Colors.white70),
                                   )
                                 ],
                               ),
@@ -140,15 +144,15 @@ class DetailsScreen extends StatelessWidget {
                                     "24 Days",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .display1
-                                        .apply(color: Colors.white),
+                                        .headlineMedium
+                                        ?.apply(color: Colors.white),
                                   ),
                                   Text(
                                     "until trip",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .body2
-                                        .apply(color: Colors.white70),
+                                        .bodyLarge
+                                        ?.apply(color: Colors.white70),
                                   )
                                 ],
                               ),
@@ -236,8 +240,8 @@ class DetailsScreen extends StatelessWidget {
                                   "Cancel Trip",
                                   style: Theme.of(context)
                                       .textTheme
-                                      .body1
-                                      .apply(color: Colors.white),
+                                      .bodyMedium
+                                      ?.apply(color: Colors.white),
                                 ),
                               ),
                               Icon(Icons.clear, color: Colors.white60),

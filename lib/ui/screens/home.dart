@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:hotel_booking/global.dart';
 import 'package:hotel_booking/ui/screens/details.dart';
@@ -50,8 +48,8 @@ class HomeScreen extends StatelessWidget {
                       "My Profile",
                       style: Theme.of(context)
                           .textTheme
-                          .display1
-                          .apply(color: Colors.white),
+                          .headlineMedium
+                          ?.apply(color: Colors.white),
                     ),
                     SizedBox(
                       height: 15,
@@ -89,8 +87,8 @@ class HomeScreen extends StatelessWidget {
                                     "${User.fullname}",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline
-                                        .apply(
+                                        .headlineSmall
+                                        ?.apply(
                                             color: MyColors.darkBlue,
                                             fontWeightDelta: 2),
                                   ),
@@ -118,8 +116,8 @@ class HomeScreen extends StatelessWidget {
                                       text: "3191",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline
-                                          .apply(
+                                          .headlineSmall
+                                          ?.apply(
                                               color: MyColors.darkBlue,
                                               fontWeightDelta: 2),
                                     ),
@@ -127,8 +125,8 @@ class HomeScreen extends StatelessWidget {
                                       text: "Travelers points",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .body2
-                                          .apply(color: MyColors.darkBlue),
+                                          .bodyLarge
+                                          ?.apply(color: MyColors.darkBlue),
                                     )
                                   ],
                                 ),
@@ -149,8 +147,8 @@ class HomeScreen extends StatelessWidget {
                                       "My next trip",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline
-                                          .apply(color: Colors.white),
+                                          .headlineSmall
+                                          ?.apply(color: Colors.white),
                                     ),
                                   ),
                                   Spacer(),
@@ -158,15 +156,15 @@ class HomeScreen extends StatelessWidget {
                                     "28",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline
-                                        .apply(color: Colors.white),
+                                        .headlineSmall
+                                        ?.apply(color: Colors.white),
                                   ),
                                   Text(
                                     "Nov",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .body1
-                                        .apply(color: Colors.white),
+                                        .bodyMedium
+                                        ?.apply(color: Colors.white),
                                   )
                                 ],
                               ),
@@ -180,8 +178,8 @@ class HomeScreen extends StatelessWidget {
                       "My Bookings",
                       style: Theme.of(context)
                           .textTheme
-                          .display1
-                          .apply(color: Colors.white),
+                          .headlineMedium
+                          ?.apply(color: Colors.white),
                     ),
                     SizedBox(
                       height: 15,
@@ -218,7 +216,8 @@ class HomeScreen extends StatelessWidget {
                                       left: 0,
                                       right: 0,
                                       child: Container(
-                                        padding: EdgeInsets.symmetric(horizontal: 9.0, vertical: 5.0),
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 9.0, vertical: 5.0),
                                         decoration: BoxDecoration(
                                           color: MyColors.lighterBlue,
                                           borderRadius: BorderRadius.only(
@@ -226,7 +225,8 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ),
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: <Widget>[
                                             Text(
                                                 "${destinationsList[i].placeName}",
@@ -238,8 +238,8 @@ class HomeScreen extends StatelessWidget {
                                               "${destinationsList[i].date}",
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .subtitle
-                                                  .apply(color: Colors.white),
+                                                  .titleSmall
+                                                  ?.apply(color: Colors.white),
                                             ),
                                           ],
                                         ),

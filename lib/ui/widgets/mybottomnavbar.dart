@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_booking/ui/widgets/mybottomnavbaritem.dart';
-class MyBottomNavBar extends StatefulWidget {
-  const MyBottomNavBar({
-    Key key,
-  }) : super(key: key);
 
+class MyBottomNavBar extends StatefulWidget {
   @override
   _MyBottomNavBarState createState() => _MyBottomNavBarState();
 }

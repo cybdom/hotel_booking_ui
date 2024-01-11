@@ -7,14 +7,19 @@ class MyBottomNavBarItem extends StatelessWidget {
   final Function function;
   final String text;
   final IconData icon;
+
   const MyBottomNavBarItem(
-      {Key key, this.active, this.function, this.id, this.text, this.icon})
-      : super(key: key);
+      {super.key,
+      required this.id,
+      required this.active,
+      required this.function,
+      required this.text,
+      required this.icon});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: function,
+      onTap: () => function,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 9.0),
         decoration: BoxDecoration(

@@ -15,26 +15,34 @@ class User {
 
 class DestinationModel {
   final String placeName, imageUrl, date, hotelName;
-  DestinationModel({this.placeName, this.imageUrl, this.date, this.hotelName});
+
+  DestinationModel(
+      {required this.placeName,
+      required this.imageUrl,
+      required this.date,
+      required this.hotelName});
 }
 
 final List<DestinationModel> destinationsList = [
   DestinationModel(
     date: "22 Nov, 2019",
     hotelName: "InterContinental",
-    imageUrl: "https://cdn.pixabay.com/photo/2014/09/11/18/23/london-441853_960_720.jpg",
+    imageUrl:
+        "https://cdn.pixabay.com/photo/2014/09/11/18/23/london-441853_960_720.jpg",
     placeName: "London",
   ),
   DestinationModel(
     date: "22 Nov, 2019",
     hotelName: "Grand Hyatt",
-    imageUrl: "https://cdn.pixabay.com/photo/2013/08/09/05/58/kuala-lumpur-170985_960_720.jpg",
+    imageUrl:
+        "https://cdn.pixabay.com/photo/2013/08/09/05/58/kuala-lumpur-170985_960_720.jpg",
     placeName: "Kuala Lumpur",
   ),
   DestinationModel(
     date: "28 Nov, 2019",
     hotelName: "Hotel Le Littre",
-    imageUrl: "https://cdn.pixabay.com/photo/2019/08/19/15/13/eiffel-tower-4416700_960_720.jpg",
+    imageUrl:
+        "https://cdn.pixabay.com/photo/2019/08/19/15/13/eiffel-tower-4416700_960_720.jpg",
     placeName: "Paris",
   ),
 ];
